@@ -1,0 +1,18 @@
+CREATE DATABASE StudentManagementl;
+use StudentManagementl;
+
+CREATE TABLE Students(
+    roll_no int,
+    name varchar(255),
+    email varchar(255),
+    contact varchar(255),
+    dob varchar(255),
+    address varchar(255),
+    gender varchar(255)
+);
+
+SELECT * from Students;
+
+ALTER TABLE Students DROP COLUMN roll_no;
+
+ALTER TABLE Students ADD roll_no int primary key;
